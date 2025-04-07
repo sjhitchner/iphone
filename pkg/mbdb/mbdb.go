@@ -5,6 +5,8 @@
 //	Work in progress
 //
 // https://www.theiphonewiki.com/wiki/ITunes_Backup#Manifest.mbdb
+// https://code.google.com/archive/p/iphonebackupbrowser/wikis/MbdbMbdxFormat.wiki
+// https://stackoverflow.com/questions/3085153/how-to-parse-the-manifest-mbdb-file-in-an-ios-4-0-itunes-backup
 package mbdb
 
 import (

@@ -41,6 +41,7 @@ func (s *MBDBSuite) Test_Next(c *C) {
 			break
 		}
 
+		fmt.Println(fi.Path, ",", fi.Filename())
 		// if len(fi.Properties) > 0 {
 		//	fmt.Println(fi)
 		// }
@@ -69,7 +70,7 @@ func (s *MBDBSuite) Test_readFileInfo(c *C) {
 	fi, err := readFileInfo(reader)
 	c.Assert(err, IsNil)
 
-	fmt.Println(fi, fi.Filename())
+	// fmt.Println(fi, fi.Filename())
 
 	c.Assert(fi.Domain, Equals, "HomeDomain")
 	c.Assert(fi.Path, Equals, "Library/SMS/sms.db")
@@ -83,7 +84,7 @@ func (s *MBDBSuite) Test_readFileInfoProperties(c *C) {
 	fi, err := readFileInfo(reader)
 	c.Assert(err, IsNil)
 
-	fmt.Println(fi, fi.Filename())
+	// fmt.Println(fi, fi.Filename())
 
 	c.Assert(fi.Domain, Equals, "MediaDomain")
 	c.Assert(fi.Path, Equals, "Library/SMS/Attachments/00/00/03C1761F-22B2-4AF5-8811-E7D27DA1D95B/IMG_0607.JPG")
